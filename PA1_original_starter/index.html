@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- H1: PAGE SETUP
+  Add a title: Investment Purchase Tracker.
+  Link styles.css using a link element.
+  Load script.js using a script element with src and defer.
+  Keep all three files in the same folder.
+  EXPECT: the browser tab shows your title. The page is still blank.
+  Empty CSS and JavaScript files will not change the page yet.
+  -->
+</head>
+<body>
+  <!-- H2: HEADER
+  Create a header with class="site-header".
+  Inside it, create a div with class="container" containing:
+    - a p with class="course-label": COP 5818 - Web Application Practice
+    - an h1: Investment Purchase Tracker
+    - a p: Record what you bought and how much you invested.
+  EXPECT: a heading and introduction appear in the browser's default style.
+  -->
+
+  <!-- H3: MAIN STRUCTURE
+  Create a main element with class="container page-layout".
+  Inside it, add three sections, in this order:
+    1. class="panel summary", aria-labelledby="summary-heading"
+    2. class="panel entry", aria-labelledby="entry-heading"
+    3. class="panel purchases", aria-labelledby="history-heading"
+  Add an h2 at the start of each section:
+    1. id="summary-heading": Purchase summary
+    2. id="entry-heading": Add a purchase
+    3. id="history-heading": Purchase history
+  aria-labelledby connects each section to its heading's ID.
+  Do H4 inside section 1, H5-H6 inside section 2, and H7 inside section 3.
+  EXPECT: three headings appear below the header. Empty sections have little height.
+  -->
+
+  <!-- H4: SUMMARY CONTENT (inside section 1, after its h2)
+  Add a div with class="balance-card":
+    h3: Total invested
+    p with id="total-invested", class="balance-value", initial text $0.00
+  Add a div with class="total-card":
+    h3: Number of purchases
+    p with id="purchase-count", class="total-value", initial text 0
+  Add a p with class="hint": Purchase cost = quantity x price per unit.
+  Add another p with class="hint": All prices are in USD. Totals represent
+  purchase costs, not current market values. Fees are not included.
+  EXPECT: the initial total and count are visible. They do not update yet.
+  -->
+
+  <!-- H5: FORM AND FIELDS (inside section 2, after its h2)
+  Create a form with id="purchase-form" and the novalidate attribute.
+  novalidate lets our JavaScript show validation messages rather than browser popups.
+  Inside the form, create three div elements, each with class="form-field".
+  Each div contains a label and an input. Connect label for to input id.
+
+  Field 1:
+    label text: Investment name; for="investment-name"
+    input: id="investment-name", name="investment-name", type="text", required
+    placeholder="For example: Example Index Fund"
+  Field 2:
+    label text: Quantity; for="quantity"
+    input: id="quantity", name="quantity", type="number", required
+    min="1", max="10000", step="1", placeholder="For example: 5"
+    aria-describedby="quantity-help"
+    after the input, p id="quantity-help" class="hint":
+      For this exercise, enter 1-10,000 whole units.
+  Field 3:
+    label text: Price per unit ($); for="unit-price"
+    input: id="unit-price", name="unit-price", type="number", required
+    min="0.01", max="1000000", step="0.01", placeholder="For example: 20.00"
+    aria-describedby="price-help"
+    after the input, p id="price-help" class="hint":
+      Enter a positive price up to $1,000,000, with at most two decimal places.
+  aria-describedby connects a control to its help text.
+  EXPECT: three labeled inputs appear. Clicking a label focuses its input.
+  You can type into the fields; no purchase is stored yet.
+  -->
+
+  <!-- H6: SUBMIT AND FEEDBACK (inside the form, after the field divs)
+  Add a button with type="submit", class="submit-button", text Add purchase.
+  Add an empty p with id="message", class="message", role="status",
+  and aria-live="polite". It will hold JavaScript feedback.
+  EXPECT: the button appears. The empty message is not visible yet.
+  Before J2, submitting may reload the page. Wait until J2 to test submission.
+  -->
+
+  <!-- H7: HISTORY (inside section 3, after its h2)
+  Add a p with class="hint": Each entry shows the investment, quantity,
+  price per unit, and purchase cost. Repeat purchases appear as separate entries.
+  Add an EMPTY ul with id="purchase-list" and class="purchase-list".
+  Do not write sample li elements in HTML; JavaScript will create them.
+  EXPECT: history heading and help text appear; the list has no items.
+  -->
+
+  <!-- H8: FOOTER (after main, before the closing body tag)
+  Add a footer with class="site-footer container" containing a p:
+    Practice with fictional purchases. Reloading this page clears all entries.
+  EXPECT: all page content is present, in one vertical flow, before CSS.
+  Check that every ID appears only once. Proceed to styles.css.
+  -->
+</body>
+</html>

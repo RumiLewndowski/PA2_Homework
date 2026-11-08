@@ -1,0 +1,2 @@
+body{font:16px/1.6 Arial,sans-serif;max-width:1000px;margin:24px auto;padding:0 20px;color:#202b33}section{margin:24px 0}label{display:block}input,select,button{font:inherit;padding:8px;margin:4px 8px 10px 0;max-width:100%;box-sizing:border-box}button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #1367aa}li{margin-bottom:12px}[hidden]{display:none!important}button:disabled{opacity:.6}@media(max-width:500px){input,select{width:100%}}
+/* Keep or adapt your PA1 styles; preserve readable narrow-screen layout and visible focus. */

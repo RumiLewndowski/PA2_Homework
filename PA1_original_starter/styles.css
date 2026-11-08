@@ -1,0 +1,78 @@
+/* INVESTMENT PURCHASE TRACKER - CSS TEMPLATE
+Complete H1-H8 first. Write each rule below its instruction comment.
+Save and reload after each step. The names below match index.html exactly.
+Use readable colors of your choice. The layout, spacing, and selectors are fixed.
+*/
+
+/* C1: PAGE DEFAULTS
+Use * to set box-sizing: border-box.
+For body: margin 0; font-family Arial, sans-serif; line-height 1.5;
+choose a dark text color and a light background color.
+For .container: width 92%; max-width 1050px; margin 0 auto.
+EXPECT: content is centered with side margins and uses a readable font.
+*/
+
+/* C2: HEADER AND HEADINGS
+.site-header: contrasting dark background/light text; padding 30px 0.
+.course-label: font-size 0.85rem; margin 0 0 8px.
+h1: font-size 2rem; margin 0 0 8px.
+h2: font-size 1.25rem; margin 0 0 18px.
+h3: font-size 1rem; margin 0 0 8px.
+EXPECT: the header and heading levels are visually distinct.
+*/
+
+/* C3: MAIN LAYOUT AND PANELS
+.page-layout: display grid; grid-template-columns 0.85fr 1.15fr;
+gap 24px; padding-top 28px.
+.panel: min-width 0; white background; padding 24px;
+1px solid light-gray border; border-radius 8px.
+.purchases: grid-column 1 / -1.
+EXPECT on a wide screen: summary left, form right, history across both columns.
+*/
+
+/* C4: SUMMARY CARDS
+.balance-card: light background; border-radius 6px; padding 18px;
+margin-bottom 18px.
+.balance-value: font-size 2rem; font-weight bold; margin 0;
+overflow-wrap anywhere (prevents long values overflowing).
+.total-card: 1px solid light-gray border; padding 14px; border-radius 6px.
+.total-value: font-size 1.25rem; font-weight bold; margin 0;
+overflow-wrap anywhere.
+.hint: font-size 0.88rem; readable muted text color.
+EXPECT: total invested is prominent and the purchase count has its own card.
+*/
+
+/* C5: FORM CONTROLS
+.form-field: margin-bottom 16px.
+label: display block; font-weight bold; margin-bottom 6px.
+input: width 100%; padding 11px; 1px solid visible border;
+border-radius 4px; font inherit; white background.
+.submit-button: dark background; light text; border 0;
+border-radius 4px; padding 12px 20px; font inherit; cursor pointer.
+.submit-button:hover: a different readable background color.
+Use the grouped selector input:focus-visible, button:focus-visible
+with a visible 3px solid outline and outline-offset 3px.
+.message: min-height 1.5em; margin-bottom 0; font-weight bold.
+EXPECT: full-width inputs and a readable button. Tab between controls:
+a visible outline identifies focus. An empty space is reserved for feedback.
+*/
+
+/* C6: HISTORY AND FOOTER
+.purchase-list: padding-left 22px; margin-bottom 0.
+.purchase-list li: padding 10px 0; 1px solid light-gray bottom border;
+overflow-wrap anywhere.
+.site-footer: padding-top 18px; padding-bottom 24px;
+font-size 0.88rem; readable muted text color.
+EXPECT: footer styling appears now. List-item styling becomes visible after J6.
+*/
+
+/* C7: RESPONSIVE LAYOUT
+Add @media (max-width: 700px). Inside it:
+  .page-layout has grid-template-columns: 1fr.
+  .panel has padding: 18px.
+Add @media (max-width: 450px). Inside it:
+  h1 has font-size: 1.6rem.
+EXPECT: below 700px, panels stack summary, form, then history.
+At about 390px wide, the page has no horizontal scrolling.
+Proceed to script.js after checking both wide and narrow windows.
+*/

@@ -1,0 +1,1 @@
+This is the original PA1 starter, included for reference. Use your own completed PA1 as the starting point. Do not redo PA1 or submit this reference folder. The PA2 requirements replace PA1 rules about in-memory-only storage and no editing/deletion.

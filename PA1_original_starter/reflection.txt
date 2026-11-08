@@ -1,0 +1,18 @@
+Name:
+
+Test report (Pass or Needs work):
+Check 1:
+Check 2:
+Check 3:
+Check 4:
+Check 5:
+Check 6:
+Check 7:
+Check 8:
+Check 9:
+
+1. How does an HTML ID connect a form control to JavaScript?
+
+2. Why convert quantity and unit price with Number?
+
+3. Why clear the old history before rebuilding it?
